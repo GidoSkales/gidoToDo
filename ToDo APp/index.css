@@ -134,7 +134,7 @@ input:focus {
 }
 
 /* Activity List */
-.items {
+.lists {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -143,19 +143,20 @@ input:focus {
   padding: 5px;
   border-radius: 4px;
 }
-.items:hover {
+.lists:hover {
   background: var(--grey);
   transition: var(--mainTransition);
 }
 .activity__list {
   height: 300px;
   width: auto;
+  overflow: scroll;
 }
 
 /* Panel */
 .panel__ {
   background: var(--navy);
-  padding: 20px;
+  padding: 15px;
   border-radius: 30px;
   height: auto;
   display: flex;
@@ -168,4 +169,14 @@ input:focus {
 i:hover {
   opacity: 40%;
   transition: var(--mainTransition);
+}
+
+/* Change Mode */
+.panel__.active {
+  background: var(--wh);
+  color: #000;
+}
+.container__mobile.active {
+  background: var(--navy);
+  color: var(--wh);
 }

@@ -36,7 +36,7 @@
           <input
             type="text"
             class="input__text"
-            placeholder="Enter your todos"
+            placeholder="Search your todos"
           />
           <button class="btn btn-submit" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -47,23 +47,21 @@
       <!-- Display -->
       <div class="display__items">
         <li class="display__texts">
-          Lorem Ipsum<button class="btn btn-add">Add</button>
-        </li>
-        <li class="display__texts">
-          Lorem Ipsum<button class="btn btn-add">Add</button>
+          <input
+            type="text"
+            placeholder="Enter your todo"
+            class="entry"
+          /><button class="btn btn-add">Add</button>
         </li>
       </div>
       <!-- ToDO -->
 
       <div class="activity__list">
         <h4 class="activity__name">Todos List:</h4>
-        <li class="items">
-          Play football
+        <div class="lists">
+          <li class="item">Code</li>
           <button class="btn btn-rmv">Remove</button>
-        </li>
-        <li class="items">
-          Play football<button class="btn btn-rmv">Remove</button>
-        </li>
+        </div>
       </div>
 
       <!-- ToDo Ends -->
@@ -75,6 +73,7 @@
         <i class="fa-brands fa-microsoft"></i>
       </div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
